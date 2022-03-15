@@ -1,0 +1,23 @@
+plugins {
+  id 'io.micronaut.application' version '3.3.0'
+}
+
+version = '0.1.0'
+sourceCompatibility = '11'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  implementation 'io.micronaut.views:micronaut-views-thymeleaf'
+}
+
+application {
+  mainClass = 'me.samoylenko.examples.vulnerable.Application'
+}
+
+micronaut {
+  version '3.3.4'
+  runtime 'netty'
+}
