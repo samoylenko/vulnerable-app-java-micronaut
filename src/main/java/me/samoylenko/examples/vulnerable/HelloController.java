@@ -7,7 +7,6 @@ import io.micronaut.http.annotation.*;
 class HelloController {
 
     @Get
-    @Produces(MediaType.TEXT_HTML)
     String getName(@QueryValue String name) {
         return "Hello, " + name;
     }
