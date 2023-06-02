@@ -3,6 +3,4 @@
 
 # Build
 .gradle/
-gradle/
 build/
-gradlew*
